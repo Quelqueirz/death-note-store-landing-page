@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --fonte-de-titulo: creepster, Inter, sans-serif;
+    --fonte-de-texto: roboto, Inter, sans-serif;
+    --cor-de-fundo: linear-gradient(180deg, #666666 0%, #000000 100%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    background: var(--cor-de-fundo);
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #f7f7f7;
+    font-family: var(--fonte-de-texto);
+    font-size: 1.2rem;
+    font-weight: semi-bold;
+}
+
+
+h1, h2, h3 {
+    font-family: var(--fonte-de-titulo);
+    color: #f7f7f7;
+}
+
+p {
+    font-family: var(--fonte-de-texto);
+    color: #f7f7f7;
+    font-size: 1.25rem;
+    font-weight: regular;
+}
+
+.cabecalho__logo {
+    margin-left: 10rem;
+    width: 265px;
+    height: 275px;
+}
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20rem;  
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+}
