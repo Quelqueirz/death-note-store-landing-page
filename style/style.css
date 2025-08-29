@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:wght@400;700&display=swap');
 :root{
-    --fonte-de-titulo: creepster, Inter, sans-serif;
-    --fonte-de-texto: roboto, Inter, sans-serif;
+    --fonte-de-titulo: 'Creepster', 'Inter', sans-serif;
+    --fonte-de-texto: 'Roboto', 'Inter', sans-serif;
     --cor-de-fundo: linear-gradient(180deg, #666666 0%, #000000 100%);
 }
 * {
@@ -20,21 +20,21 @@ a {
     text-decoration: none;
     color: #f7f7f7;
     font-family: var(--fonte-de-texto);
-    font-size: 1.2rem;
-    font-weight: semi-bold;
+    font-size: 0.8rem;
+    font-weight: 600; /* semi-bold */
 }
-
 
 h1, h2, h3 {
     font-family: var(--fonte-de-titulo);
     color: #f7f7f7;
+    font-size: 4rem;
 }
 
 p {
     font-family: var(--fonte-de-texto);
     color: #f7f7f7;
     font-size: 1.25rem;
-    font-weight: regular;
+    font-weight: 400; /* regular */
 }
 
 .cabecalho__logo {
@@ -54,4 +54,25 @@ p {
     flex-direction: row;
     align-items: center;
     gap: 5rem;
+    margin-left: 12rem;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+}
+
+.conteudo__principal p {
+    margin-bottom: 2rem; 
+}
+
+.botao { 
+    border: solid 2px transparent;
+    border-radius: 100px;
+    background-color: #b22222;
+    padding: 10px 15px;
+    box-shadow: #000000 0px 4px 12px; 
 }
